@@ -10,13 +10,14 @@ export default defineConfig({
       { find: '@/assets', replacement: fileURLToPath(new URL('./src/assets', import.meta.url)) },
       { find: '@/components', replacement: fileURLToPath(new URL('./src/components', import.meta.url)) },
       { find: '@/store', replacement: fileURLToPath(new URL('./src/store', import.meta.url)) },
+      { find: '@/views', replacement: fileURLToPath(new URL('./src/views', import.meta.url)) },
     ],
   },
   css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "@/assets/style/variables.scss";`
-      }
-    }
+    // preprocessorOptions: {
+    //   scss: {
+    //     additionalData: `@import "@/assets/scss/variables.scss";`
+    //   }
+    // }
   },
 })

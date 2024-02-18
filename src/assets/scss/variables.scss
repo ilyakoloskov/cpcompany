@@ -1,0 +1,36 @@
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+:root {
+  --primary: #fff;
+  --primary-rgb: #{hexToRGB(#fff)};
+
+  --secondary: #000;
+  --secondary-rgb: #{hexToRGB(#000)};
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1340px;
+
+  --font-family-sans-serif: Avenir, sans-serif;
+  --font-family-monospace: SFMono-Regular, monospace;
+
+  --font-size-xs: 10px;
+  --font-size-x: 12px; 
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+
+  --font-size-extra-l: 68px;
+
+  --transition: 0.3s
+}
+
+.h1 {
+  font-size: var(--font-size-extra-l);
+}
